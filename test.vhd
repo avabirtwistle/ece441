@@ -40,8 +40,3 @@ begin
         wait for 20 ns;
     end process;
 end architecture;
-
-        wait for 100 ns;
-        assert false report "Simulation finished" severity failure;
-    end process;
-end architecture;
