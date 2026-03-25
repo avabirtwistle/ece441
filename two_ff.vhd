@@ -18,10 +18,9 @@ begin
     process(clk)
     begin
         if rising_edge(clk) then
-            q_out <= ff_2; 
-            ff_2 <= ff_1;
             ff_1 <= in_async;
+            ff_2 <= ff_1;
         end if;
     end process;
-
+    q_out <= ff_2; 
 end architecture;
