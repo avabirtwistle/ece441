@@ -1,20 +1,25 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: University of Victoria
+-- Engineer: Ava Birtwistle
 -- 
--- Create Date: 03/25/2026 04:31:51 PM
--- Design Name: 
--- Module Name: hed - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
+-- Create Date: 03/22/2026 04:31:51 PM
+-- Design Name: Two Flip-Flop Synchronizer Testbench
+-- Module Name: tb_two_ff_synchronizer - Behavioral
+-- Project Name: CDC Synchronization
+-- Target Devices: FPGA
+-- Tool Versions: Vivado
+-- Description:
+-- Testbench for a 2-FF synchronizer. Applies asynchronous input pulses
+-- not aligned with clk to verify correct synchronization behavior.
 -- 
--- Dependencies: 
+-- Dependencies:
+-- two_ff_synchronizer.vhd
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
+-- 
 -- Additional Comments:
+-- Pulses intentionally violate setup/hold relative to clk to model CDC.
 -- 
 ----------------------------------------------------------------------------------
 
