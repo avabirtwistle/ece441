@@ -1,20 +1,26 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- Company: University of Victoria
 -- Engineer: Ava Birtwistle
 -- 
 -- Create Date: 03/22/2026 04:31:51 PM
--- Design Name: 
--- Module Name: tb_ff_synchronizer - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
+-- Design Name: Two Flip-Flop Synchronizer Testbench
+-- Module Name: tb_two_ff_synchronizer - Behavioral
+-- Project Name: CDC Synchronization
+-- Target Devices: FPGA (Generic)
+-- Tool Versions: Vivado (or equivalent)
 -- Description: 
+-- Testbench for a two flip-flop synchronizer. Generates an asynchronous
+-- input signal relative to the clock to verify proper synchronization
+-- and metastability mitigation behavior.
 -- 
 -- Dependencies: 
+-- two_ff_synchronizer.vhd
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
 -- Additional Comments:
+-- Asynchronous pulses are intentionally misaligned with the clock to
+-- emulate real clock domain crossing conditions.
 -- 
 ----------------------------------------------------------------------------------
 
